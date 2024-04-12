@@ -1,0 +1,17 @@
+basicinformation read data-model-revision 123456 0
+
+pairing ble-wifi 1 aaa123 88888888 21707821 2055 --bypass-attestation-verifier true
+
+pairing code 1 23302944535 --bypass-attestation-verifier true
+
+pairing code-wifi 1 aaa123 88888888 26032016423 --bypass-attestation-verifier true
+
+pairing open-commissioning-window 1 1 300 1000 2365
+
+获取endpoint列表
+any read-by-id 0x001D 0x0003 1 0
+
+获取所有endpoint的所有cluster的所有attribute值
+any read-by-id 0xFFFFFFFF 0xFFFFFFFF 1 0xFFFF
+
+any read-by-id 0xFFFFFFFF 0xFFFFFFFF 1 0xFFFF
